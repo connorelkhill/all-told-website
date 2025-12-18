@@ -1,0 +1,499 @@
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #fff7f0;
+  color: #2c1a12;
+  line-height: 1.6;
+}
+
+/* Layout helpers */
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Header */
+.site-header {
+  background: rgba(255, 247, 240, 0.97);
+  border-bottom: 1px solid #f0d1b5;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.logo-mark {
+  background: #e94b2f;
+  color: white;
+  border-radius: 999px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #5b3522;
+  padding-bottom: 0.1rem;
+  border-bottom: 2px solid transparent;
+}
+
+.nav a:hover {
+  border-bottom-color: #e94b2f;
+}
+
+/* Hero */
+.hero {
+  padding: 3rem 0 2.5rem;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  margin-bottom: 0.75rem;
+}
+
+.hero-text p {
+  max-width: 32rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  background: #e94b2f;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-primary:hover {
+  filter: brightness(0.95);
+}
+
+.hero-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #f0d1b5;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.hero-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Sections */
+.section {
+  padding: 2.75rem 0;
+}
+
+.section-alt {
+  background: #fff0e0;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-intro {
+  margin-bottom: 1.5rem;
+  max-width: 34rem;
+}
+
+/* Two column layout */
+.two-column {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 760px) {
+  .two-column {
+    grid-template-columns: 2fr 1.3fr;
+  }
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #f0d1b5;
+}
+
+.card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+.card li + li {
+  margin-top: 0.25rem;
+}
+
+/* Philosophy pills */
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin-top: 0.75rem;
+}
+
+.pill-list li {
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid #e94b2f33;
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+/* Recipes */
+.recipe-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .recipe-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.recipe-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #f0d1b5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.recipe-card h3 {
+  font-size: 1.2rem;
+}
+
+.recipe-tagline {
+  font-size: 0.95rem;
+  color: #7b4c34;
+  margin-bottom: 0.2rem;
+}
+
+.recipe-card h4 {
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.recipe-card ul,
+.recipe-card ol {
+  font-size: 0.9rem;
+  padding-left: 1.1rem;
+}
+
+.recipe-card li + li {
+  margin-top: 0.25rem;
+}
+
+.note {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #7b4c34;
+}
+
+/* Contact */
+#contact p + p {
+  margin-top: 0.5rem;
+}
+
+#contact a {
+  color: #e94b2f;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #f0d1b5;
+  padding: 1rem 0;
+  background: #fff7f0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #7b4c34;
+}
+
+.footer-sub {
+  opacity: 0.9;
+}
+
+/* Responsive tweaks */
+@media (max-width: 700px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none; /* keep it simple for now */
+  }
+
+  .hero {
+    padding-top: 2rem;
+  }
+}
+
+/* ---------------------------
+   DARK THEME OVERRIDES
+----------------------------*/
+
+/* Main background + base text */
+body {
+  background: #0f0f0f;       /* deep black charcoal */
+  color: #f2e4d8;            /* warm off-white/tan */
+}
+
+/* Header + footer */
+.site-header, .site-footer {
+  background: #0f0f0f;
+  border-color: #3a2b20;     /* warm subtle line */
+}
+
+.nav a {
+  color: #f2e4d8;
+}
+
+.nav a:hover {
+  border-bottom-color: #e94b2f;
+}
+
+/* Hero section */
+.hero {
+  background: #0f0f0f;
+}
+
+.hero-text p {
+  color: #e7d6c7;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #e94b2f;
+  color: #fff;
+}
+
+/* Cards (hero cards, info cards, recipe cards) */
+.card,
+.hero-card,
+.recipe-card {
+  background: #1a1a1a;         /* slightly lighter black */
+  border: 1px solid #3a2b20;   /* warm tan border */
+  color: #f2e4d8;
+}
+
+/* Section backgrounds */
+.section {
+  background: #0f0f0f;
+}
+
+.section-alt {
+  background: #1a1a1a;         /* soft contrast */
+}
+
+/* Section headers & text styling */
+.section h2,
+.recipe-card h3,
+.recipe-card h4,
+.card h3,
+.hero-card h2 {
+  color: #f8e8d7;              /* warm highlight tone */
+}
+
+.section-intro,
+.recipe-tagline,
+.footer-sub {
+  color: #d9c4b4;
+}
+
+/* Pill list */
+.pill-list li {
+  background: #1a1a1a;
+  border-color: #e94b2f55;
+  color: #f2e4d8;
+}
+
+/* Recipe lists */
+.recipe-card ul,
+.recipe-card ol {
+  color: #e7d6c7;
+}
+
+/* Links */
+a {
+  color: #e94b2f;
+}
+
+a:hover {
+  color: #ff7759;
+}
+
+/* Footer text */
+.site-footer span, .footer-sub {
+  color: #d9c4b4;
+}
+
+/* Logo */
+.logo-mark {
+  background: #e94b2f;
+}
+
+.logo-text {
+  color: #f2e4d8;
+}
+
+/* Mobile nav stays hidden — unchanged */
+/* ---------------------------
+   Sauce logo grid
+----------------------------*/
+
+.sauce-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.75rem;
+}
+
+/* Responsive columns */
+@media (min-width: 600px) {
+  .sauce-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .sauce-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Clickable logo cards */
+.sauce-logo-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sauce-logo-inner {
+  background: radial-gradient(circle at top, #22130d 0, #0f0f0f 55%);
+  border-radius: 1.2rem;
+  border: 1px solid #3a2b20;
+  padding: 1.5rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  transition:
+    transform 0.18s ease-out,
+    box-shadow 0.18s ease-out,
+    border-color 0.18s ease-out,
+    background 0.18s ease-out;
+}
+
+/* The sauce logo images */
+.sauce-logo-inner img {
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition:
+    filter 0.18s ease-out,
+    transform 0.18s ease-out;
+}
+
+/* Name under each logo */
+.sauce-name {
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f8e8d7;
+  opacity: 0.9;
+}
+
+/* Hover and focus states: "light up" effect */
+.sauce-logo-card:hover .sauce-logo-inner,
+.sauce-logo-card:focus-visible .sauce-logo-inner {
+  transform: translateY(-3px);
+  border-color: #e94b2f;
+  box-shadow: 0 0 18px rgba(233, 75, 47, 0.5);
+  background: radial-gradient(circle at top, #341910 0, #0f0f0f 60%);
+}
+
+.sauce-logo-card:hover img,
+.sauce-logo-card:focus-visible img {
+  filter: brightness(1.15);
+  transform: scale(1.04);
+}
+
+.sauce-logo-card:hover .sauce-name,
+.sauce-logo-card:focus-visible .sauce-name {
+  opacity: 1;
+}
+
+/* Keyboard focus outline for accessibility */
+.sauce-logo-card:focus-visible {
+  outline: 2px solid #e94b2f;
+  outline-offset: 4px;
+}
+
