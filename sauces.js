@@ -11,4 +11,10 @@ const SAUCES = [
         logo: "img/california-gold-logo.png",
         recipePage: "california-gold.html",
     },
+    {
+        id: 'fire-mountain',
+        name: "Fire on the mountain",
+        logo: "img/fire-mountain-logo.png",
+        recipePage: "fire-mountain.html",
+    },
 ]
