@@ -15,108 +15,207 @@
         <span class="logo-text">All-Told Hot Sauce</span>
       </div>
       <nav class="nav">
+        <a href="#sauces">Sauces</a>
+        <a href="#how">How it works</a>
         <a href="#about">About</a>
-        <a href="#philosophy">Why All-Told</a>
-        <a href="#recipes">Recipes</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero section -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Honest Heat, Open Recipes.</h1>
-          <p>
-            All-Told Hot Sauce is a small batch hot sauce project for friends and family.
-            No secret formulas, no mystery ingredients, just full recipes you can cook at home.
-          </p>
-          <a href="#recipes" class="btn-primary">See the sauces and recipes</a>
-        </div>
-        <div class="hero-card">
-          <h2>This is All-Told.</h2>
-          <p>
-          Each sauce has a story and every recipe is an open book. 
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Recipes section -->
-    <section id="recipes" class="section">
-        <div class="container">
-          <h2>Sauces</h2>
-          <div id="sauce-grid" class="sauce-grid">
-            <!-- JS will inject sauce logo cards here -->
+    <!-- HERO -->
+    <section class="hero hero--new">
+      <div class="container hero-inner hero-inner--new">
+
+        <div class="hero-text hero-text--new">
+          <div class="kicker">Open recipes. Small batch. No secrets.</div>
+          <h1>Honest heat, built to be shared.</h1>
+          <p class="hero-sub">
+            Every sauce has a full recipe you can make at home. Same flavor, same method, no mystery.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#sauces" class="btn-primary">Explore sauces</a>
+            <a href="#how" class="btn-ghost">How it works</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric">
+              <div class="metric__num">3</div>
+              <div class="metric__label">Sauces live</div>
+            </div>
+            <div class="metric">
+              <div class="metric__num">100%</div>
+              <div class="metric__label">Open recipes</div>
+            </div>
+            <div class="metric">
+              <div class="metric__num">pH</div>
+              <div class="metric__label">Measured &amp; published</div>
+            </div>
           </div>
         </div>
-    </section>
 
+        <div class="hero-visual">
+          <div class="hero-stack">
+            <div class="hero-panel">
+              <div class="hero-panel__title">Featured sauces</div>
 
-    <!-- About section -->
-    <section id="about" class="section">
-      <div class="container two-column">
-        <div>
-          <h2>About All-Told</h2>
-          <p>
-            All-Told started as a way to share homemade hot sauces with the people we care about.
-            Instead of guarding the recipes, we decided to publish them openly so anyone can recreate
-            the flavors in their own kitchen.
-          </p>
-          <p>
-            The goal is simple: delicious, dependable sauces with ingredients you can recognize
-            and a recipe that is always just one click away.
-          </p>
+              <div class="hero-mini-grid">
+                <a class="mini-sauce" href="bayeaux-blaze.html">
+                  <div class="mini-sauce__media" aria-hidden="true">
+                    <img src="img/bayeaux-blaze-bottle.png" alt="Bayeaux Blaze bottle">
+                  </div>
+                  <div>
+                    <div class="mini-sauce__name">Bayeaux Blaze</div>
+                    <div class="mini-sauce__meta">Vinegar + garlic</div>
+                  </div>
+                </a>
+
+                <a class="mini-sauce" href="california-gold.html">
+                  <div class="mini-sauce__media" aria-hidden="true">
+                    <img src="img/california-gold-bottle.png" alt="California Gold bottle">
+                  </div>
+                  <div>
+                    <div class="mini-sauce__name">California Gold</div>
+                    <div class="mini-sauce__meta">Seasonal fruit + citrus</div>
+                  </div>
+                </a>
+
+                <a class="mini-sauce" href="fire-on-the-mountain.html">
+                  <div class="mini-sauce__media" aria-hidden="true">
+                    <img src="img/fire-mountain-bottle.png" alt="Fire on the Mountain bottle">
+                  </div>
+                  <div>
+                    <div class="mini-sauce__name">Fire on the Mountain</div>
+                    <div class="mini-sauce__meta">Dried chiles + espresso</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="hero-panel__foot">
+                Pick a sauce, read the full recipe, then make it your own.
+              </div>
+            </div>
+
+            <div class="hero-glass">
+              <div class="glass-row">
+                <div class="glass-label">What you get</div>
+                <div class="glass-pill">Exact ingredients</div>
+                <div class="glass-pill">Step-by-step method</div>
+                <div class="glass-pill">pH + fact sheet</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <h3>What makes us different</h3>
-          <ul>
-            <li>Full recipes published on this site</li>
-            <li>Simple ingredients, clear methods</li>
-            <li>Small batch, experiment friendly</li>
-            <li>Made for home cooks, not factories</li>
-          </ul>
-        </div>
+
       </div>
     </section>
 
-    <!-- Philosophy section -->
-    <section id="philosophy" class="section section-alt">
+    <!-- SAUCES -->
+    <section id="sauces" class="section section-tight">
       <div class="container">
-        <h2>Our No-Secrets Philosophy</h2>
-        <p>
-          There is a lot of food marketing built on mystery and vague labels. All-Told is the opposite.
-          If you like one of our sauces, you should be able to learn exactly what is in it and how to
-          make it yourself.
-        </p>
-        <p>
-          That means:
-        </p>
-        <ul class="pill-list">
-          <li>Exact measurements</li>
-          <li>Step by step instructions</li>
-          <li>Notes on tweaks and substitutions</li>
-          <li>Safety tips for home bottling</li>
-        </ul>
+        <div class="section-head">
+          <div>
+            <h2>Sauces</h2>
+            <p class="section-intro">Tap a bottle to see the full recipe and technical fact sheet.</p>
+          </div>
+          <div class="section-actions">
+            <a href="#how" class="btn-ghost btn-ghost--sm">What is All-Told?</a>
+          </div>
+        </div>
+
+        <div id="sauce-grid" class="sauce-grid sauce-grid--featured">
+          <!-- JS will inject sauce logo cards here -->
+        </div>
       </div>
     </section>
 
-    <!-- Contact / footer section -->
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>How it works</h2>
+            <p class="section-intro">A simple system for sharing sauces without gatekeeping.</p>
+          </div>
+        </div>
+
+        <div class="how-grid">
+          <div class="card how-card">
+            <div class="how-icon" aria-hidden="true">1</div>
+            <h3>Choose a sauce</h3>
+            <p>Each sauce has a dedicated page with ingredients, method, and notes.</p>
+          </div>
+
+          <div class="card how-card">
+            <div class="how-icon" aria-hidden="true">2</div>
+            <h3>Cook it exactly</h3>
+            <p>We publish real measurements and a repeatable process. No guessing.</p>
+          </div>
+
+          <div class="card how-card">
+            <div class="how-icon" aria-hidden="true">3</div>
+            <h3>Make it yours</h3>
+            <p>Tweak heat, swap vinegars, experiment with fruit. The recipe is the starting point.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-split">
+          <div>
+            <h2>About All-Told</h2>
+            <p class="section-intro">
+              All-Told started as a way to share homemade hot sauces with the people we care about.
+              Instead of guarding the recipes, we publish them openly so anyone can recreate the flavors in their own kitchen.
+            </p>
+            <div class="about-pills">
+              <span class="pill">Small batch</span>
+              <span class="pill">Open recipes</span>
+              <span class="pill">Clear methods</span>
+              <span class="pill">Measured pH</span>
+            </div>
+          </div>
+
+          <div class="card about-card">
+            <h3>What makes this different</h3>
+            <ul class="check-list">
+              <li>Full recipes published on the site</li>
+              <li>Simple ingredients, clear methods</li>
+              <li>Technical fact sheet for each sauce</li>
+              <li>Made for home cooks, not factories</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact" class="section section-alt">
       <div class="container">
-        <h2>Contact</h2>
-        <p>
-          This project is mainly for friends and family. If you have feedback, new sauce ideas,
-          or you made a recipe and loved it, we would love to hear from you.
-        </p>
-        <p>
-          You can reach us at:
-          <a href="mailto:youremail@example.com">youremail@example.com</a>
-        </p>
+        <div class="contact-card">
+          <div>
+            <h2>Contact</h2>
+            <p class="section-intro">
+              This project is mainly for friends and family. If you have feedback, new sauce ideas, or you made a recipe and loved it, we would love to hear from you.
+            </p>
+          </div>
+
+          <div class="contact-action">
+            <a class="btn-primary" href="mailto:celkhill14@gmail.com">Email us</a>
+            <div class="contact-sub">
+              <a href="mailto:celkhill14@gmail.com">celkhill14@gmail.com</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
